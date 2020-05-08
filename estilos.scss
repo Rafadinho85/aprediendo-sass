@@ -1,0 +1,16 @@
+//una variable es un contenedor donde guardo informacion
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-texto:  #ff0000;
+$color-secundario: rgb(122, 20, 20);
+body{
+    background-color: $color-fondo;
+}
+h1{
+    font-family: $fuente-tipica;
+    color: $color-texto;
+}
+
+p{
+    color: $color-secundario;
+}
