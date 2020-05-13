@@ -1,0 +1,13 @@
+comandos 
+despues de instalar node js 
+linea de comandos
+node -v 
+npm -v 
+//instalar sass 
+npm install -g sass
+
+//compilar sass 
+me voy al fichero 
+
+sass --watch estilos.scss styles.css // sass para que siempre me compile los cambios el archivo de entrada y el archivo de salidad que genera
+

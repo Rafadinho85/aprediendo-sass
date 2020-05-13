@@ -54,3 +54,31 @@ p{
 .listado{
     @include crearBordes(blue, 10px, red);
 }
+
+//herencia
+/*
+
+
+*/
+%alert-normal{
+    border: 1px solid gray;
+    background: #eeeeee;
+    color: green;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+.alert{
+    @extend %alert-normal;
+}
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-sucess{
+    @extend %alert-normal;
+    color: blue($color: #000000);
+    border-color: blue;
+}
