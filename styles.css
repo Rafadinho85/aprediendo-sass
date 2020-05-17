@@ -1,3 +1,7 @@
+.clearfix {
+  clear: both;
+}
+
 body {
   background-color: #ccc;
 }
@@ -46,7 +50,9 @@ p {
 }
 
 /*
-
+es traer los atributos base de css para que los pueda utiliza otra clase
+no es algo revolucionario ya que en css nativo se podia hacer
+se pueden cambiar ciertos atributos
 
 */
 .alert-sucess, .alert-danger, .alert {
@@ -66,6 +72,22 @@ p {
 .alert-sucess {
   color: 0;
   border-color: blue;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.cajas {
+  width: 900px;
+  clear: both;
+  margin: 0px auto;
+}
+
+.caja {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px;
 }
 
 h1 {

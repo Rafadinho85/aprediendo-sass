@@ -3,6 +3,11 @@ $fuente-tipica: sans-serif, Helvetica, Arial;
 $color-fondo: #ccc;
 $color-texto:  #ff0000;
 $color-secundario: rgb(122, 20, 20);
+
+.clearfix{
+    
+    clear: both;
+}
 //uso de variables
 body{
     background-color: $color-fondo;
@@ -57,7 +62,9 @@ p{
 
 //herencia
 /*
-
+es traer los atributos base de css para que los pueda utiliza otra clase
+no es algo revolucionario ya que en css nativo se podia hacer
+se pueden cambiar ciertos atributos
 
 */
 %alert-normal{
@@ -81,4 +88,24 @@ p{
     @extend %alert-normal;
     color: blue($color: #000000);
     border-color: blue;
+}
+
+//operadores
+
+$caja: 200px;
+$wrap: 900px;
+
+h1{
+    font-size: 20px+5px;
+}
+.cajas{
+    width: 900px;
+    clear: both;
+    margin: 0px auto;
+}
+
+.caja{
+    float: left;
+    width: $caja /$wrap *100%; 
+    margin: 10px;
 }
