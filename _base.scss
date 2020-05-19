@@ -109,3 +109,23 @@ h1{
     width: $caja /$wrap *100%; 
     margin: 10px;
 }
+
+//estructuras de control
+//condicionales if
+$color-fondo:green;
+h1{
+    @if $color-fondo != #ccc{
+        color:black;
+    } @else if($color-fondo == black){
+        color: lightsalmon;
+    }@else{
+        color: pink;
+    }
+}
+
+//for
+
+//each
+
+
+//while
